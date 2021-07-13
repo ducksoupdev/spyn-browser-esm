@@ -1,0 +1,30 @@
+{
+  "name": "spyn-browser-esm",
+  "version": "1.0.0",
+  "description": "ES module of Spyn for browser use",
+  "type": "module",
+  "main": "dist/spyn.esm.js",
+  "module": "dist/spyn.esm.js",
+  "scripts": {
+    "build": "rollup --silent -i node_modules/spyn/index.js -o dist/spyn.esm.js -f es -p \"node-globals={}\" -p \"node-builtins={}\" -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"commonjs={}\" -p \"node-resolve={}\"",
+    "test": "npm run build && http-server -o test"
+  },
+  "author": "Matt Levy",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "19.0.0",
+    "@rollup/plugin-node-resolve": "13.0.0",
+    "http-server": "0.12.3",
+    "rollup": "2.53.1",
+    "rollup-plugin-node-builtins": "2.1.2",
+    "rollup-plugin-node-globals": "1.4.0",
+    "rollup-plugin-terser": "7.0.2",
+    "spyn": "0.2.2",
+    "standard": "16.0.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/spyn.esm.js"
+    }
+  }
+}
