@@ -4,4 +4,4 @@ ES module build of [Spyn](https://www.npmjs.com/package/spyn) (safe and minimal 
 
 This package provides an ES module specifically designed for in-browser testing.
 
-See the [test](test) directory for an example.
+See the [test](https://github.com/ducksoupdev/spyn-browser-esm/tree/main/test) directory for an example.

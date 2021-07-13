@@ -1,6 +1,6 @@
 {
   "name": "spyn-browser-esm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ES module of Spyn for browser use",
   "type": "module",
   "main": "dist/spyn.esm.js",
